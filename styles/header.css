@@ -1,0 +1,153 @@
+.search-bar {
+   display: flex; 
+  }
+  .header{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betwee6n;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(208, 208, 208) ;
+    z-index: 100;
+  } 
+  .left-section{
+    display: flex;
+    align-items: center;
+  }
+  .middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 37px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+  }
+  .search-bar{
+    height: 35px;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(159, 158, 158);
+    border-radius: 2px;
+    width: 0px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0,0,0.05);
+  }
+  .search-bar::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+  }
+  .right-section{
+    margin-right: 20px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-left: 290px;
+  }
+  .hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+  }
+  .youtube-logo{
+    height: 20px;
+  }
+  .search-button{
+    height: 39px;
+    width: 66px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(159, 158, 158);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+  }
+  .search-icon{
+    height: 25px;
+    
+    background-color: rgb(240, 240, 240);
+  }
+
+  .voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+  }
+  .voice-icon{
+    height: 25px;
+    margin-top: 4px;
+  }
+
+  .upload-icon{
+    height: 24px;
+  }
+  .youtube-apps{
+    height: 24px;
+  }
+  .notifications-icon{
+    height: 24px;
+  }
+  .notifications-icon-container{
+    position: relative;
+  }
+  .notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(155, 0, 0);
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .current-user-pic{
+    height: 32px;
+    border-radius: 16px;
+  }
+  .search-button, .voice-button, .upload-icon-container , .youtube-apps-container,
+  .notifications-icon-container
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-button .tooltip , .voice-button .tooltip , .upload-icon-container .tooltip , .youtube-apps-container .tooltip,
+  .notifications-icon-container .tooltip
+  {
+    position:absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .search-button:hover .tooltip ,
+  .voice-button:hover .tooltip , .upload-icon-container:hover .tooltip,
+  .youtube-apps-container:hover .tooltip, .notifications-icon-container:hover .tooltip
+  {
+    opacity: 1;
+  }
